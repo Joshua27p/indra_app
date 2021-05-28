@@ -1,0 +1,33 @@
+.home {
+  padding: 3rem 0 ;
+  &__portrait {
+    background: url('../../assets/images/portrait-img.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 20rem;
+    padding-left: 2rem;
+  }
+  span {
+    color: #494F66;
+    font-size: 10px;
+    font-family: "lato", sans-serif;
+    font-weight: bold;
+  }
+  h1 {
+    color: #494F66; 
+    font-size: 1.75rem;
+    font-family: "lato", sans-serif;
+    padding: 1rem 0;
+  }
+  h1::after {
+    content:"Tracking";
+    color: #EF3340;
+  }
+   
+  p {
+    color: #676F8F;
+    font-size: 0.87rem;
+    max-width: 200px;
+    font-family: "roboto", sans-serif;
+  }
+}

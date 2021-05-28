@@ -1,0 +1,19 @@
+.select {
+  padding: 2rem 0 1rem 0;
+  &__container {
+    width: 100%;
+    display: flex;
+    select{
+      border: #C5CBE0 solid 1px;
+      padding: 1rem;
+      border-right: none;
+      width: 30%;
+
+    }
+    input{
+      border: #C5CBE0 solid 1px;
+      padding: 1rem;
+      width: 70%;
+    }
+  }
+}

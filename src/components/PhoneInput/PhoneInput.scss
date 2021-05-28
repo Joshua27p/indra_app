@@ -1,0 +1,12 @@
+.phone-input {
+  padding-bottom: 1rem;
+  &__container{
+    width: 100%;
+    display: flex;
+    input {
+      width: 100%;
+      border: #C5CBE0 solid 1px;
+      padding: 1rem;
+    }
+  }
+}

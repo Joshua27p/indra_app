@@ -1,0 +1,15 @@
+.header__container {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  img {
+    padding-right: .5rem;
+  }
+}
+
+.header__phone {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #6769FF;
+    font-size: 14px;
+  }
