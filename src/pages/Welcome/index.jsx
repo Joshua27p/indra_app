@@ -3,9 +3,10 @@ import './Welcome.scss';
 import ProgressBar from '../../components/ProgressBar';
 import CustomSelect from '../../components/CustomSelect';
 import FindBrand from '../../components/FindBrand';
+import RadioInput from '../../components/RadioInput';
+import AmountCounter from '../../components/AmounCounter';
 import years from '../../constants/years.constant';
 import carBrands from '../../constants/car-brands.constant'
-
 
 const Welcome = () => {
   const name = 'Juan'
@@ -25,6 +26,14 @@ const Welcome = () => {
         options={carBrands}
       />
       <FindBrand />
+      <RadioInput 
+        text="¿Tu auto es a gas?"
+        type="radio"
+      />
+      <AmountCounter 
+        text="Indica la suma  asegurada"
+      />
+
     </div>
   )
 }
