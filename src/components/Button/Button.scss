@@ -1,0 +1,28 @@
+.button {
+  padding-top: 1rem;
+  text-align: center;
+  button {
+    border: 1px solid #EF3340;
+    background-color: #EF3340;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1rem 4rem;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'lato', sans-serif;
+    transition: all ease-in-out 300ms;
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    text-align: left;
+    &__primary {
+      max-width: 12rem;
+    }
+  }
+}

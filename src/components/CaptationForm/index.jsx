@@ -3,6 +3,8 @@ import SelectDocument from '../SelectDocument'
 import './CaptationForm.scss'
 import PhoneInput from '../PhoneInput'
 import PlateInput from '../PlateInput'
+import Button from '../Button'
+import CheckBoxInput from '../CheckBoxInput'
 
 
 const CaptationForm = () => {
@@ -20,6 +22,13 @@ const CaptationForm = () => {
           type="number"
           name="plate"
           placeholder="Placa"
+        />
+        <CheckBoxInput 
+          type="checkbox"
+        />
+        <Button 
+          label="Cotízalo"
+          className="button__primary"
         />
       </form>
 

@@ -10,3 +10,12 @@
   }
 
 }
+
+@media screen and (min-width: 768px) {
+  .captation-form {
+    &__container {
+      max-width: 21rem;
+      margin: auto; 
+    }
+  }
+}

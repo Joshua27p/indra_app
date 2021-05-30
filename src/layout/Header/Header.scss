@@ -13,3 +13,20 @@
     color: #6769FF;
     font-size: 14px;
   }
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    max-width: 1140px;
+    margin: auto;
+
+    img {
+      position: relative;
+    }
+  }
+  .header__phone::before {
+    content: "¿Tienes alguna duda?";
+    color: #676F8F;
+    font-size: 12px;
+    padding-right: 1rem;
+  }
+}
