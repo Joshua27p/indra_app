@@ -1,8 +1,7 @@
 import React from 'react'
 import SelectDocument from '../SelectDocument'
 import './CaptationForm.scss'
-import PhoneInput from '../PhoneInput'
-import PlateInput from '../PlateInput'
+import CustomInput from '../CustomInput'
 import Button from '../Button'
 import CheckBoxInput from '../CheckBoxInput'
 
@@ -13,12 +12,12 @@ const CaptationForm = () => {
       <h2>Déjanos tus datos</h2>
       <form>
         <SelectDocument />
-        <PhoneInput
+        <CustomInput
           type="number"
           name="phone"
           placeholder="Celular"
         />
-        <PlateInput 
+        <CustomInput 
           type="number"
           name="plate"
           placeholder="Placa"

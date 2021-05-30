@@ -1,0 +1,36 @@
+.welcome-progress {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-top: 1px solid #F0F2FA;
+  border-bottom: 1px solid #F0F2FA;
+  &__steps{
+    color: #676F8F;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: .8em;
+    img{
+      margin-bottom: -.5rem;
+      padding-right: .5rem;
+    }
+  }
+  &__progressbar-bg{
+    background-color: #E4E8F7;
+    width: 14rem;
+    position: relative;
+    border-radius: 15px;
+    margin-left: 1rem;
+    height: 12px;
+  }
+  &__progressbar-bar{
+    background-color: #6F7DFF;
+    width:5rem;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+    height: 12px;
+  }
+
+}
