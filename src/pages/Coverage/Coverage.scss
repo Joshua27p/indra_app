@@ -1,0 +1,26 @@
+.coverage {
+  padding: 0 1rem;
+  &__portrait {
+    background: #F7F8FC;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h1 {
+      font-size: 28px;
+      font-family: 'lato', sans-serif;
+      color: #494F66;
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #676F8F;
+      padding-top: .5rem;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    color: #494F66;
+    font-family: 'lato', sans-serif; 
+
+  }
+
+}

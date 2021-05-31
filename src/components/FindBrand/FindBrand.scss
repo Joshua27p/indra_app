@@ -1,0 +1,28 @@
+.find-brand {
+  &__container {
+    display: flex;
+    background-color: #F7F8FC;
+    border-radius: 8px;
+    padding: 1rem;
+    img{
+      width: 50px;
+    }
+  }
+  &__sub-content {
+    padding-left: 1rem;
+    p {
+      color: #676F8F;
+      font-family: 'robot',sans-serif;
+      padding-bottom: .5rem;
+    }
+    a {
+      color: #6F7DFF;
+      text-decoration: none;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-family: 'lato', sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }   
+}

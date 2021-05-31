@@ -5,7 +5,7 @@ const CustomSelect = ({options=[], label}) => {
   return (
     <div className="custom-select">
       <label>{label}</label>
-      <select className="custom-select__input">
+      <select>
         {options.map(o=> 
           <option value={o}>{o}</option>
         )}

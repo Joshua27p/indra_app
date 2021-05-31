@@ -1,0 +1,46 @@
+.welcome-page {
+  padding: 0 1rem;
+ &__message {
+    padding: 2rem 0 1rem 0;
+    p:first-child {
+      font-family: 'lato', sans-serif;
+      font-size: 28px;
+      padding-bottom: 1rem;
+      span {
+        color: #EF3340
+      }
+    }
+    p {
+      color: #676F8F;
+      font-family: 'roboto', sans-serif;
+      font-size: 16px;
+    }
+  }
+  &__desktop-content {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-page {
+    padding: 0;
+    display: flex;
+    &__desktop-content {
+      display: block;
+      background: #F7F8FC;
+      width: 40%;
+    }
+    &__mobile-content {
+      width: 100%; 
+      padding-left: 5rem;
+      padding-right: 10rem;
+    }
+    &__mobile-container {
+      max-width: 600px;
+    }
+    &__search-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

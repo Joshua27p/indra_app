@@ -7,12 +7,20 @@
     label {
       color: #A3ABCC;
       font-size: 12px;
-
+      font-family: 'roboto', sans-serif;
     }
-  &__input {
+  select {
+    margin-top: .2rem;	
     border: 0;
+    font-family: 'lato', sans-serif;
+    color: #494F66;
+    font-size: 16px;
     background-color: unset;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background: url('../../assets/icons/chevrot.svg');
+    background-repeat: no-repeat;
+    background-position:calc(100% - 15px) 30%;
+    background-size: 12px;
   }
 }

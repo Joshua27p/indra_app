@@ -11,10 +11,16 @@
     font-size: 14px;
     font-family: 'lato', sans-serif;
     transition: all ease-in-out 300ms;
+    position: relative;
     &:hover {
       transform: scale(1.05);
       cursor: pointer;
     }
+  }
+  &__arrow {
+    position: absolute;
+    right: 16px;
+    width: .5rem;
   }
 }
 

@@ -1,0 +1,50 @@
+.amount-counter {
+  padding-top: 1.5rem;
+  &__text {
+    color: #494F66;
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+  }
+  &__range-container{
+    display: flex;
+    padding: 1rem 0;
+  }
+  &__min-value{
+    text-transform: uppercase;
+    color: #676F8F;
+    font-size: 12px;
+    span {
+      margin-right: .5rem
+    }
+    &::after {
+      content:"|"
+    }
+  }
+  &__max-value{
+    text-transform: uppercase;
+    color: #676F8F;
+    font-size: 12px;
+    margin-left: .5rem;
+  }
+  &__quantity-container {
+    display: flex;
+    border: 1px solid #C5CBE0;
+    padding: 1rem;
+    justify-content: space-between;
+    button {
+      border: unset;
+      background-color: unset;
+      color: #939DFF;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    p {
+      color: #494F66;
+      font-size: 16px;
+      font-family: 'lato', sans-serif;
+      span{
+        margin-right: .2rem;
+      }
+    }
+  }
+}
