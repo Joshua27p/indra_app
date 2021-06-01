@@ -30,6 +30,7 @@
     display: flex;
     border: 1px solid #C5CBE0;
     padding: 1rem;
+    border-radius: 8px;
     justify-content: space-between;
     button {
       border: unset;
@@ -45,6 +46,26 @@
       span{
         margin-right: .2rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .amount-counter {
+    grid-column-start: 1;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    &__quantity-container {
+      padding-top:0;
+      padding-bottom: 0;
+      width: 8rem;
+      max-height: 4rem;
+      margin-left: .5rem;
+    }
+    p{
+      display: flex;
+      align-items: center;
     }
   }
 }

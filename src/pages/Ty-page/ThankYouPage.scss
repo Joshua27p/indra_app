@@ -1,0 +1,65 @@
+.thankyoupage {
+  &-desktop__img{
+    display: none;
+  }
+  &__container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  &-mobile__img { 
+    width: 100%;
+  }
+  h1 {
+    color:#EF3340;
+    font-family: 'lato', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 3rem 0 1rem
+  }
+  &__subtitle {
+    font-size: 28px;
+    line-height: 1.4;
+    font-family: 'lato', sans-serif;
+    color: #494F66;
+    padding-bottom: 1rem;
+  }
+  &__info {
+    font-size: 16px;
+    color: #676F8F;
+    font-family: 'roboto', sans-serif;
+    padding-bottom: .5rem;
+  }
+  &__email {
+    margin-bottom: 2rem;
+    font-family: 'roboto', sans-serif;
+    color:#494F66
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thankyoupage {
+    display: flex;
+    justify-content: space-between;
+    &-mobile__img {
+      display: none;
+    }
+    &-dekstop__bg {
+      background-color: #F7F8FC;
+      height: 100vh;
+      position: relative;
+      width: 40%;
+    }
+    &-desktop__img{
+      display: block;
+      width: 307px;
+      position: absolute;
+      right: -56px;
+      top: 21%;
+    }
+    &__container {
+      margin-top: 3rem;
+      padding-left: 4rem;
+      padding-right:4rem ;
+    }
+  }
+}

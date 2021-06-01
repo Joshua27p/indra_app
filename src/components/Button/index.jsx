@@ -2,9 +2,9 @@ import React from 'react';
 import './Button.scss';
 import rightArrowIcon from '../../assets/icons/right-arrow.svg'
 
-const Button = ({label, type, className, arrow }) => {
+const Button = ({label, type, className, arrow, col }) => {
   return (
-    <div className="button">
+    <div className={`button ${col}`}>
           <button 
           className={className} 
           type={type}

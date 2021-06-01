@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Welcome from './pages/Welcome';
 import Coverage from './pages/Coverage';
+import ThankYouPage from './pages/Ty-page';
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
           <Route  exact path="/coverage">
             <Coverage />
           </Route>
-
+          <Route exact path="/thankyou">
+            <ThankYouPage />
+          </Route>
         </Switch>
       </Router>
       <Footer />

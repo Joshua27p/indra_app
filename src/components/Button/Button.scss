@@ -6,7 +6,6 @@
     background-color: #EF3340;
     border-radius: 8px;
     color: #fff;
-    padding: 1rem 4rem;
     width: 100%;
     font-size: 14px;
     font-family: 'lato', sans-serif;
@@ -16,6 +15,12 @@
       transform: scale(1.05);
       cursor: pointer;
     }
+  }
+  &__primary{
+    padding: 1rem 4rem;
+  }
+  &__lg {
+    padding: 1rem 4rem;
   }
   &__arrow {
     position: absolute;
@@ -27,8 +32,18 @@
 @media screen and (min-width: 768px) {
   .button {
     text-align: left;
+    &__column-1 {
+      grid-column-start: 1;
+    }
+    &__column-2 {
+      grid-column-start: 2;
+    }
     &__primary {
       max-width: 12rem;
+    }
+    &__lg {
+      max-width: 15rem;
+      padding: 1rem 
     }
   }
 }

@@ -4,7 +4,6 @@ import wheelImg from '../../assets/images/services-wheel.svg'
 import crashImg from '../../assets/images/services-crash.svg'
 import motorWay from '../../assets/images/services-motorway.svg'
 import ServicesCard from '../ServicesCard'
-import Button from '../Button'
 
 const CoverageServices = () => {
   return (
@@ -37,12 +36,7 @@ const CoverageServices = () => {
           <p>$35.00</p>
           <p>mensual</p>
         </div>
-        <Button 
-        label="Lo quiero"
-        type="submit"
-        />
-      </div>
-
+      </div>h
     </div>
     
   )

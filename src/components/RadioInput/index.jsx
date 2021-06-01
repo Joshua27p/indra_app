@@ -5,10 +5,16 @@ const RadioInput = ({type='radio', text}) => {
   return (
     <div className="radio-input">
       <p>{text}</p>
-      <input type={type} name="selection"  value="yes"/>
-      <label>Sí</label>
-      <input type={type}  name="selection" value="no"/>
-      <label>No</label>
+      <div className="radio-input__container">
+        <div>
+          <input type={type} name="selection"  value="yes"/>
+          <label>Sí</label>
+        </div>
+        <div>
+          <input type={type}  name="selection" value="no"/>
+          <label>No</label>
+        </div>
+      </div>
     </div>
   )
 }

@@ -17,18 +17,37 @@
     }
   }
   &__desktop-content {
-      display: none;
-    }
+    display: none;
+  }
+  &__back-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .welcome-page {
     padding: 0;
     display: flex;
+    &__back-container {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 1rem;
+        color: #A3ABCC;
+        text-transform: uppercase; 
+        font-family: 'lato', sans-serif;
+        font-size: 12px;
+      }
+    }
+    &__message {
+      grid-column-start: 1;
+    }
     &__desktop-content {
       display: block;
       background: #F7F8FC;
-      width: 40%;
+      width: 60%  ;
+      height: 100vh;
     }
     &__mobile-content {
       width: 100%; 
@@ -36,11 +55,13 @@
       padding-right: 10rem;
     }
     &__mobile-container {
-      max-width: 600px;
+      display: grid;
+      grid-template-columns: 45% 1fr;
+      grid-column-gap: 2rem;
     }
     &__search-container {
-      display: flex;
       justify-content: space-between;
+      grid-column-start: 1;
     }
   }
 }

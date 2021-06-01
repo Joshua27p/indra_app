@@ -22,5 +22,44 @@
     font-family: 'lato', sans-serif; 
 
   }
+  &__desktop-content {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .coverage {
+    display: flex;
+    &__desktop-content {
+      display: block;
+      background: #F7F8FC;
+      width: 60%  ;
+      height: 100vh;
+    }
+    &__portrait {
+      background: unset;
+      h1 {
+        font-size: 40px;
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    &__mobile-content {
+      padding-left: 3rem;
+      display: grid;
+      grid-template-columns: 60% 1fr;
+      column-gap: 5rem;
+      margin-right: 5rem;
+    }
+    &__cotization-container {
+      grid-column-start: 1;
+      h3 {
+        font-size: 20px;
+        font-weight: normal;;
+      }
+    }
+  }
 }
