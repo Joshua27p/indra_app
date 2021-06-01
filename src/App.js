@@ -12,8 +12,8 @@ import ThankYouPage from './pages/Ty-page';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <Home />

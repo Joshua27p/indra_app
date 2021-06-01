@@ -34,6 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .home-portrait {
+    padding-bottom: 0;
     display: flex;
      &__container {
       background: url(../../assets/images/fondo-rimac.png);
@@ -43,7 +44,10 @@
       background-repeat: no-repeat;
       height: 100vh;
       width: 40%;
-     }
+      p {
+        max-width: unset;
+      }
+    }
      &__information {
        margin-top: 16rem;
        padding-left: 1rem;
