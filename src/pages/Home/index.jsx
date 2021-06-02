@@ -10,7 +10,7 @@ const Home = () => {
         <div className="home-portrait__information">
           <span className="home-portrait__message">!Nuevo¡</span>
           <h1>Seguro Vehicular <br/></h1>
-          <p>Cuéntanos dónde le haras seguimiento a tu seguro</p>
+          <p className="home-portrait__question">Cuéntanos dónde le haras seguimiento a tu seguro</p>
         </div>
       </div>
       <section className="captation-form">

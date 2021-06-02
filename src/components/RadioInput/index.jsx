@@ -6,14 +6,16 @@ const RadioInput = ({type='radio', text}) => {
     <div className="radio-input">
       <p>{text}</p>
       <div className="radio-input__container">
-        <div>
+        <label>
           <input type={type} name="selection"  value="yes"/>
-          <label>Sí</label>
-        </div>
-        <div>
+          <p>Sí</p>
+          <div className="radio-input__checked"></div>
+        </label>
+        <label>
           <input type={type}  name="selection" value="no"/>
-          <label>No</label>
-        </div>
+          <p>No</p>
+          <div className="radio-input__checked"></div>
+        </label>
       </div>
     </div>
   )

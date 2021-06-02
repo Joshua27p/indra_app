@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router';
 import Button from 'src/components/Button';
 import CarInfoCard from 'src/components/CarInfoCard';
 import CoverageServices from 'src/components/CoverageServices';
@@ -6,6 +7,8 @@ import ProgressBar from 'src/components/ProgressBar';
 import './Coverage.scss';
 
 const Coverage = () => {
+  const history = useHistory();
+
   return (
     <div className="coverage">
       <div className="coverage__desktop-content">
@@ -33,6 +36,7 @@ const Coverage = () => {
           type="submit"
           col="button__column-2"
           className="button__primary"
+          onClick={()=>history.push('/thankyou')}
         />
       </div>
     </div>

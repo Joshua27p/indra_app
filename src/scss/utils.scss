@@ -2,3 +2,23 @@
   max-width: 1140px;
   margin: auto;
 }
+
+.error-message {
+  p {
+    color: #ff888d;
+    padding-left: .5rem;
+    font-size: 10px;
+    padding-top: 4px;
+    font-family: 'roboto',sans-serif;
+  }
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+select {
+  outline: none
+}

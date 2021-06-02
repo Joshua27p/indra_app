@@ -4,14 +4,61 @@
   }
   p {
     color: #494F66;
-    font-family: 'lato', sans-serif;
     font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
   }
   label {
-    margin: 0 .5rem;
-    color: #494F66;
-    font-size: 16px;
+    margin: 0 .5rem 0 ;
+    position: relative;
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    p {
+      padding-left: 12px;
+      padding-top: 5px;
+      color: #494F66;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: normal;
+    }
   }
+  &__checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d4d5e8;
+    background-color: #fff;
+    border-radius: 50%;
+    &::after {
+      top: 3px;
+      left: 3px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #92d66f;
+      transition: opacity .3s;
+      opacity: 0;
+    }
+  }
+  input[type='radio']:checked ~ .radio-input__checked {
+    border: 1px solid #92d66f;
+    &::after {
+      content: "";
+      position: absolute;
+      opacity:1;
+    }
+  }
+  
 }
 
 @media screen and (min-width: 768px) {

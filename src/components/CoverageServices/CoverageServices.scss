@@ -18,7 +18,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
-  
-  
+  &-amount__cotization {
+    color:#494F66;
+    font-size: 24px;
+  }
+  &-amount__month {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
