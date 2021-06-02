@@ -18,7 +18,7 @@ Las librerías usadas en este proyecto fueron:
 
 Para usar el proyecto es necesario usar npm install
 
-
+demo del proyecto https://frosty-noether-3e5cb0.netlify.app/
 ## Autor ✒️
 
 
