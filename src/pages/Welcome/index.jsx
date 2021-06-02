@@ -43,9 +43,7 @@ const Welcome = () => {
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="welcome-page__mobile-container">       
-            <ProgressBar
-              step="1"
-            />
+            <ProgressBar step="1"/>
             <div className="welcome-page__back-container">
               <a className="welcome-page__back" href="/#"><img src={backICon} alt="back button" /></a>
               <p>Volver</p>
@@ -56,16 +54,16 @@ const Welcome = () => {
             </div>
             <div className="welcome-page__search-container">
               <div>
-                    <CustomSelect 
-                      label="Año"
-                      options={years}
-                      name="year"
-                    />
-                    <CustomSelect 
-                      label="Modelo"
-                      options={carBrands}
-                      name="brand"
-                    />
+                <CustomSelect 
+                  label="Año"
+                  options={years}
+                  name="year"
+                />
+                <CustomSelect 
+                  label="Modelo"
+                  options={carBrands}
+                  name="brand"
+                />
               </div>
             </div>
             <FindBrand />
@@ -76,8 +74,8 @@ const Welcome = () => {
               text= "Indica la suma asegurada"
               min={12500}
               max={16500}
-              amount={1500}
-              />
+              amount={12500}
+            />
             <Button 
               type='submit'
               label='Continuar'
