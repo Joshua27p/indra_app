@@ -1,5 +1,5 @@
 
-import { AUTH_LOGIN, SELECTED_INFO } from '../actions/types';
+import { AUTH_LOGIN, SAVE_PLATE, SELECTED_INFO } from '../actions/types';
 
 const mainReducer = (state, action) => {
   console.log(action)
@@ -13,6 +13,11 @@ const mainReducer = (state, action) => {
       return{
         ...state,
         selectedInfo: action.payload
+      }
+    case SAVE_PLATE:
+      return {
+        ...state,
+         platesSaved: action.payload
       }
     default:
       return state

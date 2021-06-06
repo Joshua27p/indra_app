@@ -1,11 +1,6 @@
 .form-checkbox {
   margin-bottom: 15px;  
-
-  &__checkConditions{ 
-    position: absolute;
-    outline: none;
-    opacity: 0;
-  }
+  display: flex;
   &__focused {
     position: relative;
     cursor: pointer;

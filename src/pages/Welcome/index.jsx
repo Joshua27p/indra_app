@@ -17,10 +17,9 @@ import { useHistory } from 'react-router';
 import { selectedInfo } from 'src/redux/actions';
 
 const Welcome = () => {
-  const dispatch = useDispatch()
-  const history = useHistory()
-
-  const user = useSelector(state => state.user)
+  const dispatch = useDispatch();
+  const history = useHistory();
+  const user = useSelector(state => state.user);
   const methods = useForm({
     mode: 'onChange',
     resolver: yupResolver (formSchema)

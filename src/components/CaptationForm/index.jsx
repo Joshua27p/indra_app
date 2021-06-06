@@ -8,7 +8,7 @@ import formSchema from './schema'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { FormProvider, useForm } from 'react-hook-form'
 import { fetchUser } from '../../services/index'; 
-import { login } from 'src/redux/actions'
+import { login, savePlate } from 'src/redux/actions'
 import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router'
 
@@ -21,12 +21,14 @@ const CaptationForm = () => {
     mode: 'onChange',
     resolver: yupResolver(formSchema)
   });
+  
   const { handleSubmit } = methods;
   const onSubmit = async data =>{
     const id = +data.identification.substr(data.identification.length - 1) + 1
     console.log(id)
     const user = await fetchUser(id)
     dispatch(login(user))
+    dispatch(savePlate(data))
     history.push('/welcome')
   };
 

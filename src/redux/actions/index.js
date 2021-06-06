@@ -1,4 +1,4 @@
-import { AUTH_LOGIN, SELECTED_INFO } from './types'
+import { AUTH_LOGIN, SAVE_PLATE, SELECTED_INFO } from './types'
 
 
 export const login = user => ({
@@ -9,4 +9,9 @@ export const login = user => ({
 export const selectedInfo = selects =>  ({
   type: SELECTED_INFO,
   payload: selects,
+})
+
+export const savePlate = plates => ({
+  type: SAVE_PLATE,
+  payload: plates,
 })
